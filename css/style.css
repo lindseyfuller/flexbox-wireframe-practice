@@ -11,7 +11,7 @@
     padding: 10px;
     border-radius: 10px;
     flex-wrap: wrap;
-    width: 30%;
+    width: 80%;
     font-family: sans-serif;
 }
 
@@ -72,4 +72,29 @@
     width: 80%;
     height: auto;
     border-radius: 20px;
+}
+
+@media (min-width: 1024px) {
+    .container {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        height: auto;
+    }
+    .box {
+        width: 60%;
+        height: 60%;
+       }
+   
+    .aside {
+        width: 37%;
+        height: auto;
+        text-align:center;
+        padding: 40px;
+        content: center;
+        align-items: center;
+        align-content: center;
+    }
+    .header, .footer{
+        width: 100%;
+    }
 }
